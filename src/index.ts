@@ -115,7 +115,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
         // PNG image — identical on desktop and mobile
         "gnome-img": {
           type: "image" as const,
-          props: { url: imageUrl, aspect: "1:1" as const, alt: `${name} the gnome` },
+          props: { url: imageUrl, aspect: "4:3" as const, alt: `${name} the gnome` },
         },
         "fid-label": {
           type: "text" as const,
@@ -125,7 +125,12 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
             align: "center" as const,
           },
         },
-
+        sep: { type: "separator" as const, props: {} },
+        actions: {
+          type: "stack" as const,
+          props: { direction: "horizontal" as const, gap: "sm" as const },
+          children: ["view-btn", "share-btn"],
+        },
         "view-btn": {
           type: "button" as const,
           props: { label: "View Again", icon: "refresh-cw" as const },
