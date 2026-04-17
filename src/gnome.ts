@@ -81,7 +81,7 @@ export function generateGnome(fid: number): GnomeData {
 
   // Hat brim: * inside at col3, or plain space
   const hasStar = rng() < 0.5;
-  const brim    = hasStar ? `/ * \\` : `/   \\`;
+  const brim    = hasStar ? `/ * \\` : `/ _ \\`;
 
   // Face — Noggles (⌐◨-◨) is a fixed special case (~8%)
   const isNoggles = rng() < 0.08;
@@ -113,7 +113,7 @@ export function generateGnome(fid: number): GnomeData {
   const body = pick(rng, BODY_SYMBOLS);
 
   const art = [
-    `   ^`,
+    `     ^`,
     `   ${brim}`,
     `${face}`,
     `   / ${body} \\`,
