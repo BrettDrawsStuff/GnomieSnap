@@ -12,10 +12,10 @@ A Farcaster Snap where every user claims their own unique ASCII gnome, determini
 ## Gnome anatomy
 
 ```
-   ^            ← hat tip
-   / * \        ← hat brim (* = starred variant)
-<(o_o)>         ← face (eyes + mouth, various bracket styles)
-   / x \        ← body symbol
+   ^          ← hat tip
+ / * \        ← hat brim (* = starred variant)
+<(o_o)>       ← face (eyes + mouth, various bracket styles)
+ / x \        ← body symbol
 ```
 
 ## Local dev
