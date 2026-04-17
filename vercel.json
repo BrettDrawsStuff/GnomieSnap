@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npx tsc --noEmit",
+  "devCommand": "SKIP_JFS_VERIFICATION=1 npx tsx src/index.ts",
+  "installCommand": "npm install"
+}
