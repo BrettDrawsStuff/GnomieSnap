@@ -125,12 +125,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
             align: "center" as const,
           },
         },
-        sep: { type: "separator" as const, props: {} },
-        actions: {
-          type: "stack" as const,
-          props: { direction: "horizontal" as const, gap: "sm" as const },
-          children: ["view-btn", "share-btn"],
-        },
+
         "view-btn": {
           type: "button" as const,
           props: { label: "View Again", icon: "refresh-cw" as const },
