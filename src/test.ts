@@ -22,7 +22,7 @@ for (let fid = 1; fid <= 200; fid++) {
   const { art } = generateGnome(fid);
   const [l0, l1, l2, l3] = art.split("\n");
   const ok = [
-    colOf(l0, "^") === 3,
+    colOf(l0, "^") === 5,
     colOf(l1, "/") === 3,
     colOf(l1, "\\") === 7,
     colOf(l2, "<") === 0,
