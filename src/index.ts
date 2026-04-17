@@ -56,7 +56,7 @@ function mysteryPage(base: string) {
           children: ["m-l0", "m-l1", "m-l2", "m-l3"],
         },
         "m-l0": { type: "text" as const, props: { content: "   ^",      align: "center" as const } },
-        "m-l1": { type: "text" as const, props: { content: " /????\\",  align: "center" as const } },
+        "m-l1": { type: "text" as const, props: { content: " /???\\",  align: "center" as const } },
         "m-l2": { type: "text" as const, props: { content: "<(?_?)>",   align: "center" as const } },
         "m-l3": { type: "text" as const, props: { content: " / ? \\",   align: "center" as const } },
         sub: {
@@ -115,7 +115,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
         // PNG image — identical on desktop and mobile
         "gnome-img": {
           type: "image" as const,
-          props: { url: imageUrl, aspect: "4:3" as const, alt: `${name} the gnome` },
+          props: { url: imageUrl, aspect: "1:1" as const, alt: `${name} the gnome` },
         },
         "fid-label": {
           type: "text" as const,
