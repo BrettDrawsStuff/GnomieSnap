@@ -115,7 +115,7 @@ export function generateGnome(fid: number): GnomeData {
   const art = [
     `     ^`,
     `   ${brim}`,
-    `${face}`,
+    `   ${face}`,
     `   / ${body} \\`,
   ].join("\n");
 
