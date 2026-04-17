@@ -113,10 +113,10 @@ export function generateGnome(fid: number): GnomeData {
   const body = pick(rng, BODY_SYMBOLS);
 
   const art = [
-    `     ^`,
-    `   ${brim}`,
+    `^`,
+    `${brim}`,
     `${face}`,
-    `   / ${body} \\`,
+    `/ ${body} \\`,
   ].join("\n");
 
   // ─── Name ─────────────────────────────────────────────────────────────────
