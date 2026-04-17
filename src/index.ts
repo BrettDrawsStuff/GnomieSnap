@@ -82,7 +82,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
   const { art, name } = gnome;
 
   // PNG image URL — rendered server-side for pixel-perfect display on all devices
-  const imageUrl = `${base}/img/${fid}`;
+  const imageUrl = `${base}/img/${fid}.png`;
 
   // For the share cast, preserve leading spaces with non-breaking spaces
   const shareLines = art.split("\n").map(preserveIndent);
