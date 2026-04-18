@@ -57,10 +57,10 @@ function mysteryPage(base: string) {
           props: { gap: "none" as const },
           children: ["m-l0", "m-l1", "m-l2", "m-l3"],
         },
-        "m-l0": { type: "text" as const, props: { content: nbspArt("   ^"),      align: "center" as const } },
-        "m-l1": { type: "text" as const, props: { content: nbspArt(" /????\\"),  align: "center" as const } },
+        "m-l0": { type: "text" as const, props: { content: nbspArt("^"),      align: "center" as const } },
+        "m-l1": { type: "text" as const, props: { content: nbspArt("/???\\"),  align: "center" as const } },
         "m-l2": { type: "text" as const, props: { content: nbspArt("<(?_?)>"),   align: "center" as const } },
-        "m-l3": { type: "text" as const, props: { content: nbspArt(" / ? \\"),   align: "center" as const } },
+        "m-l3": { type: "text" as const, props: { content: nbspArt("/ ? \\"),   align: "center" as const } },
         sub: {
           type: "text" as const,
           props: {
