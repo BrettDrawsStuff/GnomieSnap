@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 // ─── Font ─────────────────────────────────────────────────────────────────────
 // Liberation Mono is metrically identical to Courier New — bundled in /assets.
 const __dir   = dirname(fileURLToPath(import.meta.url));
-const fontData = readFileSync(join(__dir, "../assets/LiberationMono-Regular.ttf"));
+const fontData = readFileSync(join(__dir, "../assets/NotoSansMono.ttf"));
 
 // ─── Layout constants ─────────────────────────────────────────────────────────
 const FONT_SIZE   = 30;
@@ -33,7 +33,7 @@ export async function renderGnomePng(art: string): Promise<Uint8Array> {
         backgroundColor: "#000000",
         width: IMG_WIDTH,
         padding: `${PAD_Y}px ${PAD_X}px`,
-        fontFamily: "Liberation Mono",
+        fontFamily: "NotoSansMono",
         fontSize: FONT_SIZE,
         fontWeight: 400,
         color: "#ffffff",
@@ -57,7 +57,7 @@ export async function renderGnomePng(art: string): Promise<Uint8Array> {
     height,
     fonts: [
       {
-        name: "Liberation Mono",
+        name: "NotoSansMono",
         data: fontData,
         weight: 400,
         style: "normal",
