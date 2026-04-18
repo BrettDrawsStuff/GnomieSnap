@@ -5,7 +5,7 @@ A Farcaster Snap where every user claims their own unique ASCII Gnomie, determin
 ## How it works
 
 - Each FID gets exactly one Gnomie — same FID always produces the same Gnomie
-- The snap renders the Gnomie as a PNG (white on black, Liberation Mono font) for identical display on desktop and mobile
+- The snap renders the Gnomie as a PNG (white on black, DejaVu Sans Mono font) for identical display on desktop and mobile
 - Sharing a Gnomie composes a cast with plain ASCII art + preserved indentation
 - Claims persist via Turso KV (falls back to in-memory for local dev)
 
@@ -70,7 +70,7 @@ gnome-snap/
 │   ├── render-png.ts   ← satori + resvg PNG renderer
 │   └── test.ts         ← determinism + alignment tests
 ├── assets/
-│   └── LiberationMono-Regular.ttf  ← bundled font (must be committed to git)
+│   └── DejaVuSansMono.ttf  ← bundled font (must be committed to git)
 ├── package.json
 ├── tsconfig.json
 ├── vercel.json
