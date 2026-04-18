@@ -1,15 +1,15 @@
-# 🌲 Gnome Sanctuary — Farcaster Snap
+# 🌲 Gnomie Sanctuary — Farcaster Snap
 
-A Farcaster Snap where every user claims their own unique ASCII gnome, deterministically generated from their FID. Displays as a pixel-perfect PNG in the snap. Shares as plain ASCII text in casts.
+A Farcaster Snap where every user claims their own unique ASCII Gnomie, deterministically generated from their FID. Shares as plain ASCII text in casts.
 
 ## How it works
 
-- Each FID gets exactly one gnome — same FID always produces the same gnome
-- The snap renders the gnome as a PNG (white on black, Liberation Mono font) for identical display on desktop and mobile
-- Sharing a gnome composes a cast with plain ASCII art + preserved indentation
+- Each FID gets exactly one Gnomie — same FID always produces the same Gnomie
+- The snap renders the Gnomie as a PNG (white on black, Liberation Mono font) for identical display on desktop and mobile
+- Sharing a Gnomie composes a cast with plain ASCII art + preserved indentation
 - Claims persist via Turso KV (falls back to in-memory for local dev)
 
-## Gnome anatomy
+## Gnomie anatomy
 
 ```
    ^          ← hat tip
@@ -23,7 +23,7 @@ A Farcaster Snap where every user claims their own unique ASCII gnome, determini
 ```bash
 npm install
 npm run dev      # starts on :3003 with JFS verification skipped
-npm test         # run gnome generator smoke tests
+npm test         # run Gnomie generator smoke tests
 npm run typecheck
 ```
 
@@ -79,4 +79,4 @@ gnome-snap/
 
 ## PNG image route
 
-`GET /img/:fid` renders the gnome for a given FID as a PNG and returns it with long-lived cache headers. The snap's `image` element points here. Results are cached in memory per process.
+`GET /img/:fid` renders the Gnomie for a given FID as a PNG and returns it with long-lived cache headers. The snap's `image` element points here. Results are cached in memory per process.
