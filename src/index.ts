@@ -50,7 +50,7 @@ function mysteryPage(base: string) {
         },
         title: {
           type: "text" as const,
-          props: { content: "🌲 Gnome Sanctuary", weight: "bold" as const, align: "center" as const },
+          props: { content: "🌲 Gnomie Ascii Sanctuary 🌲", weight: "bold" as const, align: "center" as const },
         },
         "mystery-art": {
           type: "stack" as const,
@@ -64,7 +64,7 @@ function mysteryPage(base: string) {
         sub: {
           type: "text" as const,
           props: {
-            content: "A gnome awaits you. Only you can claim it.",
+            content: "A Gnomie awaits you. Only you can claim it.",
             size: "sm" as const,
             align: "center" as const,
           },
@@ -72,7 +72,7 @@ function mysteryPage(base: string) {
         sep: { type: "separator" as const, props: {} },
         "claim-btn": {
           type: "button" as const,
-          props: { label: "Claim My Gnome", variant: "primary" as const, icon: "star" as const },
+          props: { label: "Claim My Gnomie", variant: "primary" as const, icon: "star" as const },
           on: { press: { action: "submit" as const, params: { target: `${base}/?action=claim` } } },
         },
       },
@@ -88,7 +88,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
 
   // For the share cast, preserve leading spaces with non-breaking spaces
   const shareLines = art.split("\n").map(nbspArt);
-  const shareText  = `I claimed ${name} in the Gnome Sanctuary! 🌲\n\n${shareLines.join("\n")}\n\nClaim yours →`;
+  const shareText  = `I claimed ${name} in the Gnomie Ascii Sanctuary! 🌲\n\n${shareLines.join("\n")}\n\nClaim yours →`;
 
   return {
     version: "2.0" as const,
@@ -105,7 +105,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
         title: {
           type: "text" as const,
           props: {
-            content: isNew ? "🎉 Your gnome has been claimed!" : "🌲 Your Gnome",
+            content: isNew ? "🎉 Your Gnomie has been claimed!" : "🌲 Your Gnomie",
             weight: "bold" as const,
             align: "center" as const,
           },
@@ -122,7 +122,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
         "fid-label": {
           type: "text" as const,
           props: {
-            content: `Gnome #${fid}  ·  Bound to FID ${fid}`,
+            content: `Gnomie #${fid}  ·  Bound to FID ${fid}`,
             size: "sm" as const,
             align: "center" as const,
           },
@@ -140,7 +140,7 @@ function gnomePage(fid: number, gnome: GnomeData, base: string, isNew: boolean) 
         },
         "share-btn": {
           type: "button" as const,
-          props: { label: "Share Gnome", variant: "primary" as const, icon: "share" as const },
+          props: { label: "Share Gnomie", variant: "primary" as const, icon: "share" as const },
           on: {
             press: {
               action: "compose_cast" as const,
