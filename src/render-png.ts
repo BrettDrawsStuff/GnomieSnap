@@ -11,7 +11,7 @@ const fontData = readFileSync(join(__dir, "../assets/LiberationMono-Regular.ttf"
 
 // ─── Layout constants ─────────────────────────────────────────────────────────
 const FONT_SIZE   = 30;
-const LINE_HEIGHT = 1.55;
+const LINE_HEIGHT = 1;
 const PAD_X       = 48;
 const PAD_Y       = 40;
 const IMG_WIDTH   = 320;
