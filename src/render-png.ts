@@ -38,7 +38,7 @@ export async function renderGnomePng(art: string): Promise<Uint8Array> {
         fontWeight: 400,
         color: "#ffffff",
         lineHeight: LINE_HEIGHT,
-        letterSpacing: "0em",
+        letterSpacing: "-0.05em",
       },
       children: lines.map((line) => ({
         type: "div",
