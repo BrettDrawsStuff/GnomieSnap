@@ -13,7 +13,7 @@ const fontData = readFileSync(join(__dir, "../assets/DejaVuSansMono.ttf"));
 const FONT_SIZE   = 30;
 const LINE_HEIGHT = 1.25;
 const PAD_X       = 48;
-const PAD_Y       = 50;
+const PAD_Y       = 55;
 const IMG_WIDTH   = 320;
 
 // ─── Render ───────────────────────────────────────────────────────────────────
