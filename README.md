@@ -39,7 +39,7 @@ Set these environment variables in your Vercel project dashboard:
 
 | Variable | Value |
 |---|---|
-| `SNAP_PUBLIC_BASE_URL` | Your deployment URL, e.g. `https://gnome-snap.vercel.app` |
+| `SNAP_PUBLIC_BASE_URL` | Your deployment URL, e.g. `https://gnomiesnap.vercel.app` |
 | `NODE_ENV` | `production` |
 | `TURSO_DATABASE_URL` | From your Turso dashboard |
 | `TURSO_AUTH_TOKEN` | From your Turso dashboard |
